@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    background-color: #23a6f0;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #23A6F0;
+    width: 100%;
+    height: 997px;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-wrapper {
+    width: 100%;
+    height: 793px; /* Match the height of the background image */
+    background-image: url(/images/hero-cover.jpg);
+    background-size: 1440px 793px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.background-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  
+    pointer-events: none; 
+    z-index: 1; 
+}
+.nav-con {
+    display: flex;
+    width: 1322px;
+    justify-content: space-between;
+    align-items: center;
+    height: 91px;
+    margin: 0 59px;
+    color: white;
+    overflow: hidden;
+    z-index: 2; 
+}
+
+.nav-logo {
+    font-size: 24px;
+    width: 187px;
+    height: 58px;
+    align-items: center;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    z-index: 2; 
+}
+
+.nav-bar {
+    width: 815px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    gap: 235px;
+    overflow: hidden;
+    z-index: 2; 
+
+}
+
+.nav-link {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    vertical-align: top;
+    width: fit-content;
+    height: fit-content;
+    min-width: 280px;
+    min-height: 24px;
+    gap: 21px;
+    overflow: hidden;
+}
+
+.nav-signin {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    min-width: 300px;
+    min-height: 52px;
+    gap: 45px;
+    text-align: left;
+}
+
+.login {
+    border: 2px solid black;
+    background: none;
+    border: none;
+    padding: 0 0 0 10px;
+    align-items: center;
+}
+
+.become-member {
+    border-radius: 5px;
+    width: 214px;
+    height: 52px;
+    gap: 45px;
+    align-items: center;
+}
+
+.hero-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1046px;
+    height: fit-content;
+   
+    gap: 80px;
+    z-index: 2;
+    position: relative;
+}
+.hero-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 699;
+    height: fit-content;
+    min-height: 432px;
+    gap: 40px;
+    padding: 40px;
+    overflow: hidden;
+}
+.hero-head {
+    display: flex;
+    flex-direction: column;
+    justify-items: top;
+    text-align: center;
+    color: white;
+    width: 701px;
+    height: fit-content;
+
+
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    min-width: 352px;
+    min-height: 52px;
+    gap: 10px;
+}
+.hero-btn button{
+    display: flex;
+    gap: 10px;
+    padding: 15px 36px;
+    border-radius: 37px;
+    color: #ffffff;
+}
+.hero-btn2{
+    border: 1px solid white;
+    background: none;
+}
+
+.hero-card {
+    margin-top: 170px;
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    min-width: 1046px;
+    min-height: 201.532px;
+    gap: 30px;
+    z-index: 2;
+    position: relative;
+}
+
+.card-left,
+.card-right,
+.card-mid {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+/* features */
+
+.features {
+    display: flex;
+    width: fit-content;
+    min-width: 1440px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.features-con {
+    display: flex;
+    width: 1050px;
+    height: fit-content;
+    min-height: 435.29px;
+    overflow: hidden;
+    padding: 96px 0;
+    
+}
+
+.features-tabs {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    min-width: 1046px;
+    min-height: 243.29px;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.features-tabs div {
+    height: fit-content;
+    width: 328px;
+    min-height: 243.29px;
+    overflow: hidden;
+}
+
+
+/*.features-tab1
+.features-tab2
+.features-tab3*/
+
+/* testmonials */
+
+.testmonials {
+    width: 100%;
+    height: 872px;
+    overflow: hidden;
+    background-color: #FAFAFA;
+
+}
+
+.testmnl-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1050px;
+    height: fit-content;
+    min-height: 787.01;
+    gap: 80px;
+    padding: 112px 0;
+    overflow: hidden;
+}
+
+.testmnl-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 607px;
+    height: fit-content;
+    min-height: 107px;
+    overflow: hidden;
+}
+
+.testmnl-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    min-width: 1045px;
+    min-height: 376.01px;
+    gap: 30px;
+}
+
+.testmnl-cards div {
+display: flex;
+flex-direction: column;
+gap: 0 20px;
+
+}
+.testmnl-cards div .star{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* contents */
+.content {
+    border: 2px solid black;
+    width: 100%;
+    height: 339;
+    overflow: hidden;
+}
+
+.content-con-top {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 1050px;
+    height: fit-content;
+    min-height: 175px;
+    overflow: hidden;
+
+}
+
+.platform-icons {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    min-width: 1054px;
+    min-height: 175px;
+    gap: 30px;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.platform-icons div {
+    display: flex;
+    justify-content: center;
+    width: 153px;
+    height: fit-content;
+    min-height: 34;
+    overflow: hidden;
+}
+
+.content-con-bot {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 1050px;
+    height: fit-content;
+    min-height: 164px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.content-cards {
+ background-image: linear-gradient(to left, #D71489, #004788);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-cards div {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 1048px;
+    height: fit-content;
+    min-height: 124px;
+    overflow: hidden;
+}
+
+/* pricing */
+
+.pricing {
+    border: 2px solid black;
+    width: 1440px;
+    height: 1116px;
+    overflow: hidden;
+}
+
+.pricing-con {
+    border: 2px solid black;
+
+}
+
+.pricing-head {
+    border: 2px solid black;
+}
+
+.pricing-cards {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-cards div {
+    border: 2px solid black;
+}
+.pricing-card2{
+   background-color: #252B42;
+}
+
+/* contact */
+.contact {
+    border: 2px solid black;
+}
+
+.contact-con {
+    border: 2px solid black;
+}
+
+.contact-head {
+    border: 2px solid black;
+}
+
+.Contact-form {
+    border: 2px solid black;
+}
+
+/* footer */
+footer {
+    border: 2px solid black;
+}
+
+footer div {
+    border: 2px solid black;
+}
